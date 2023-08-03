@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock title %}
+{% block body %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+{% endfor %}
+<div class="breadcrumbs overlay" style="background-image:url('static/images/breadcrumb-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--/ End Header -->
+<div class="Main-container">
+    <div class="container-login">
+        <div class="wrap-login">
+
+            <div class="login-pic">
+                <img src="static/images/logo.png" alt="logo">
+            </div>
+
+            <form class="login-form" method="post" action="{% url "register" %}">
+                {% csrf_token %}
+                <span class="login-form-title">Register</span>
+                <div class="wrap-input">
+                    Enter University Roll Number:
+                    <input type="Number" class="input" name="username" placeholder="Enter University Roll Number" required>
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input">
+                   First Name:
+                    <input type="text" class="input" name="fname" placeholder="Enter Your First Name" required>
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input">
+                   Last Name:
+                    <input type="text" class="input" name="lname" placeholder="Enter Your Last Name" required>
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input">
+                    Email:
+                    <input type="text" class="input" name="email" placeholder="Enter Your Email" required>
+                    <span class="focus-input"></span>
+                 
+                </div>
+                <div class="wrap-input">
+                    Enter Password:
+                    <input type="password" class="input" name="password1" placeholder="Enter Password" required>
+                    <span class="focus-input"></span>
+                    
+                </div>
+                <div class="wrap-input">
+                    Re-Enter Password:
+                    <input type="password" class="input" name="password2" placeholder="Re-Enter Password" required>
+                    <span class="focus-input"></span>
+                    
+                </div>
+
+                <div class="login-form-btn-container">
+                    <button class="login-form-btn" >Create Account </button>
+                </div>
+
+            
+                <div class="text-center p-t-2">
+                    <p>Already have an Account</p>
+                    <a href="/account" class="txt2">Login<i class="fa fa-long-arrow-right " aria-hidden="true"></i></a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,324 @@
+{% load static  %}
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Title -->
+
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+
+		<!-- Web Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+		<!-- Nice Select CSS -->
+        <link rel="stylesheet" href="{% static 'css/niceselect.css'%}">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+		<!-- Fancy Box CSS -->
+        <link rel="stylesheet" href="{% static 'css/cube-portfolio.min.css' %}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		<!-- Slick Nav CSS -->
+        <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+        <!-- Magnific Popup -->
+		<link rel="stylesheet" href="{%static 'css/magnific-popup.css' %}">
+
+		<!-- Eduland Stylesheet -->
+        <link rel="stylesheet" href="{%static 'css/normalize.css' %}">
+        {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
+        <link rel="stylesheet" href="{% static 'css/responsive.css'%} ">
+		<link rel="stylesheet" href="{% static 'css/colors/color1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+        <link rel="stylesheet" href="{%static 'css/account.css' %}">
+        <link rel="stylesheet" href="{%static 'css/user.css' %}">
+        <title> {% block title %}StudyBuddy{% endblock title %} </title>
+    </head>
+    <body>
+    <header class="header">
+        <!-- Header Inner -->
+        <div class="header-inner overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <!-- Logo -->
+                        <div class="logo">
+                            
+                            <a href="#" width="90px" height="20" style="padding-top: 20px;">{{request.user.first_name}} {{request.user.last_name}}</a>
+                        </div>
+                        <!--/ End Logo -->
+                        <div class="mobile-menu"></div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-12">
+                        <div class="menu-bar">
+                            <nav class="navbar navbar-default">
+                                <div class="navbar-collapse">
+                                </div>
+                            </nav>
+							<div class="search-area">
+								
+									
+								</form>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+<br>    
+	<!-- SIDEBAR -->
+	<div id="sidebar">
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span>Dashboard</span>
+			</li>
+		</ul>
+		<ul class="side-menu buttom">
+			<li>
+				<a href="{% url 'logout' %}" class="logout" >
+					<i class='bx bxs-log-out-circle' ></i>
+					<span>Logout</span>
+					
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<div id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					{% comment %} <h1>Dashboard</h1> {% endcomment %}
+					<h1><span>WellCome    </span><span>{{request.user.first_name}}</span></h1>
+					<ul class="breadcrumb">
+						<li>
+						</li>
+						<li></li>
+
+					</ul>
+				</div>
+			</div>
+
+	</div>
+	<!-- CONTENT -->
+    <!-- <div class="table-data"> -->
+        <div>
+        <div class="order">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>.....</th>
+                        <th>Course</th>
+                        <th>Watch Video</th>
+                        <th>Interview Question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Python Programming</td>
+                        <td> <a href=" https://youtu.be/gfDE2a7MKjA"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                        <td><a href="https://protechstack.com/interview/python-interview-questions?gclid=CjwKCAjw3POhBhBQEiwAqTCuBhkuiWJ9FZsaZ5Vb5mUtUFeRg8YS9FElF7mnn2RPxVZ3sqZqFGJGWRoC7ScQAvD_BwEs"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                         Operating System
+                        </td>
+                        <td><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                        <td><a href="https://www.interviewbit.com/operating-system-interview-questions/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                          <span>Compiler Design</span>
+                        </td>
+                        
+                        <td><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                        <td><a href="https://mindmajix.com/compiler-design-interview-questions"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Software Engineering
+                        </td>
+                        <td><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                        <td> <a href="https://www.interviewbit.com/software-engineering-interview-questions/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Computer Networks
+                        </td>
+                        <td><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                        <td><a href="https://www.interviewbit.com/networking-interview-questions/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            DataBase Management System
+                        </td>
+                        <td><a href="https://youtu.be/kBdlM6hNDAE"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                        <td><a href="https://www.interviewbit.com/dbms-interview-questions/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></a></td>
+                    </tr>
+                </tbody>
+            </table>
+	<footer class="footer section">
+			
+        <div class="footer-top overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        
+                        <div class="single-widget about">
+                            <h2>About StudyBuddy</h2>
+                            <ul class="list">
+                                <li><i class="fa fa-phone"></i>Phone: +9100000000000</li>
+                                <li><i class="fa fa-envelope"></i>Email: <a href="mailto:study@buddy.com">study@buddy.com</a></li>
+                                <li><i class="fa fa-map-o"></i>Address: Durgapur, West Bengal, India.</li>
+                            </ul>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Useful Links -->
+                        <div class="single-widget opening-times">
+                            
+                            
+                        </div>
+                        <!--/ End Useful Links -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            <p>© Copyright StudyBuddy 2022. Design & Development by <b>Uma Mahata, Sucheta Mahato, Akash Bhandari & Gaurav Gupta.</b> </p>
+                        </div>
+                        <!--/ End Copyright -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Bottom -->
+    </footer>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/jquery-migrate.min.js' %}"></script>
+		<!-- Colors JS-->
+        <script src="{% static 'js/colors.js' %}"></script>
+		<!-- Popper JS-->
+        <script src="{% static 'js/popper.min.js' %}"></script>
+		<!-- Bootstrap JS-->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<!-- Owl Carousel JS-->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<!-- Jquery Steller JS -->
+		<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+		<!-- Final Countdown JS -->
+		<script src="{% static 'js/finalcountdown.min.js' %}"></script>
+		<!-- Fancy Box JS-->
+		<script src="{% static 'js/facnybox.min.js' %}"></script>
+		<!-- Magnific Popup JS-->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<!-- Circle Progress JS -->
+		<script src="{% static 'js/circle-progress.min.js' %}"></script>
+		<!-- Nice Select JS -->
+		<script src="{% static 'js/niceselect.js' %}"></script>
+		<!-- Jquery Steller JS-->
+        <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+		<!-- Jquery Steller JS-->
+        <script src="{% static 'js/cube-portfolio.min.js' %}"></script>
+		<!-- Slick Nav JS-->
+        <script src="{% static 'js/slicknav.min.js'%} "></script>
+		<!-- Easing JS-->
+        <script src="{% static 'js/easing.min.js' %}"></script>
+		<!-- Waypoints JS-->
+        <script src="{% static 'js/waypoints.min.js' %}"></script>
+		<!-- Counter Up JS -->
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<!-- Scroll Up JS-->
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+		<!-- Gmaps JS-->
+		<script src="{% static 'js/gmaps.min.js' %}"></script>
+		<!-- Main JS-->
+        <script src="{% static 'js/main.js'%}"></script>
+        <script src="{% static 'js/user.js' %}"></script>
+    </body>
+</html>
