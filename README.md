@@ -1,4 +1,4 @@
-
+<h1 align="center">Study Buddy</h1>
 
 ## Key Features
 
@@ -20,9 +20,14 @@ $ cd College-Project
 # Install dependencies
 $ pip install Django==4.2.4
 
-# Run the app
-$ npm start
+# Run the program
+$ python manage.py runserver
+
+# Coppy the URL from terminal and paste it on any browser's URL tab
 ```
+> **Note**<br>
+> It's the College Project of the final year student's group from Sanaka Educational Trust's Group of Institutions.<br>
+> Group Members: Akash Bhandari,Uma Mahata, Sucheta Mahato, Gaurav Gupta.
 
 
 
